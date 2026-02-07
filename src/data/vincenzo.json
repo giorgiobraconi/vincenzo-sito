@@ -1,0 +1,67 @@
+{
+  "client_id": "vincenzo_nutrizionista",
+  "theme": {
+    "primary": "#7319BE",
+    "primary_light": "#9F5FE8",
+    "primary_dark": "#5A1499",
+    "secondary": "#F5F1EB",
+    "secondary_dark": "#E8DFD0",
+    "accent": "#D4A574",
+    "accent_light": "#E8C9A1",
+    "neutral_50": "#FAFAF9",
+    "neutral_100": "#F5F5F4",
+    "neutral_800": "#292524",
+    "neutral_900": "#1C1917",
+    "success": "#10B981",
+    "warning": "#F59E0B",
+    "font_serif": "Playfair Display",
+    "font_sans": "Inter"
+  },
+  "meta": {
+    "title": "Vincenzo Amati | Metodo Nutrizionale Personalizzato",
+    "description": "Smetti di rincorrere diete che non funzionano. Metodo personalizzato con accompagnamento costante per risultati duraturi nella vita reale.",
+    "og_image": "/images/og-vincenzo.jpg"
+  },
+  "hero": {
+    "badge": "Metodo Esclusivo",
+    "headline": "Smetti di darti la colpa se le diete non funzionano.",
+    "subheadline": "Il problema non è la forza di volontà. È che nessuno ti ha seguito nel modo giusto. Qui è diverso.",
+    "cta_text": "Scopri come funziona il percorso",
+    "cta_url": "#quiz",
+    "cta_sub": "⏱ 2 minuti • 🔒 Riservato • Senza impegno",
+    "image_src": "/images/hero-vincenzo.jpg",
+    "image_alt": "Nutrizionista professionista al lavoro con cliente",
+    "stat_badge": {
+      "value": "-8kg",
+      "label": "media primi 3 mesi",
+      "icon": "trending-down"
+    }
+  },
+  "trust": {
+    "text": "⭐⭐⭐⭐⭐ Persone che avevano già provato più diete senza risultati duraturi",
+    "rating": 4.9,
+    "count": 127
+  },
+  "problem": {
+    "title": "Ti riconosci in almeno una di queste situazioni?",
+    "items": [
+      {
+        "icon": "repeat",
+        "text": "Hai provato almeno 2-3 diete diverse, ma dopo qualche settimana torni sempre al punto di partenza"
+      },
+      {
+        "icon": "book-open",
+        "text": "Sai cosa 'dovresti' mangiare, ma nella vita reale non riesci a seguire i piani standard"
+      },
+      {
+        "icon": "trending-up",
+        "text": "Hai perso peso in passato, ma poi l'hai ripreso (a volte anche di più)"
+      },
+      {
+        "icon": "frown",
+        "text": "Ti senti costantemente in colpa quando 'sgarri', ma poi lo fai lo stesso"
+      }
+    ],
+    "footer": "Il problema non è che ti manca la motivazione. È che ti manca il metodo giusto."
+  }
+}

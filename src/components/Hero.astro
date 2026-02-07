@@ -1,0 +1,92 @@
+---
+import data from '../data/vincenzo.json';
+const { hero, theme } = data;
+---
+
+<section class="min-h-screen flex items-center" style={`background-color: ${theme.secondary};`}>
+  <div class="max-w-7xl mx-auto px-6 py-20 lg:px-12 lg:py-24 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      
+      <!-- Left Column -->
+      <div>
+        <!-- Badge -->
+        <div class="mb-8">
+          <span 
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-medium uppercase tracking-wide"
+            style={`background-color: ${theme.primary}1A; border-color: ${theme.primary}33; color: ${theme.primary};`}
+          >
+            <span class="w-2 h-2 rounded-full animate-pulse" style={`background-color: ${theme.primary};`}></span>
+            {hero.badge}
+          </span>
+        </div>
+
+        <!-- Headline -->
+        <h1 
+          class="text-5xl lg:text-7xl font-bold mb-6 font-serif leading-tight"
+          style={`color: ${theme.neutral_900};`}
+        >
+          {hero.headline}
+        </h1>
+
+        <!-- Subheadline -->
+        <p 
+          class="text-lg lg:text-xl mb-10 leading-relaxed max-w-2xl"
+          style={`color: ${theme.neutral_800};`}
+        >
+          {hero.subheadline}
+        </p>
+
+        <!-- CTA Button -->
+        <div>
+          <a 
+            href={hero.cta_url}
+            class="inline-block px-8 py-4 lg:px-10 lg:py-5 rounded-full text-white font-semibold text-lg shadow-lg hover:scale-105 transition-transform duration-200"
+            style={`background: linear-gradient(135deg, ${theme.primary}, ${theme.primary_light}); box-shadow: 0 10px 25px -5px ${theme.primary}4D;`}
+          >
+            {hero.cta_text}
+          </a>
+          
+          <div class="mt-4 text-sm flex items-center gap-3" style={`color: ${theme.neutral_800}99;`}>
+            <span>⏱ 2 minuti</span>
+            <span>•</span>
+            <span>🔒 Riservato</span>
+            <span>•</span>
+            <span>Senza impegno</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Image placeholder -->
+      <div class="relative">
+        <div 
+          class="rounded-2xl border-2 bg-white p-2 shadow-xl"
+          style={`border-color: ${theme.secondary_dark}; aspect-ratio: 3/4;`}
+        >
+          <div class="w-full h-full bg-gray-200 rounded-xl flex items-center justify-center">
+            <p class="text-gray-500 text-center px-8">
+              Immagine placeholder<br/>
+              <span class="text-sm">(Aggiungi un'immagine in /public/images/hero-vincenzo.jpg)</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Floating stat card -->
+        <div 
+          class="absolute top-8 -right-4 px-6 py-4 rounded-xl shadow-xl"
+          style={`background-color: ${theme.primary}F2; border: 1px solid #FFFFFF33;`}
+        >
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg" style="background-color: rgba(255,255,255,0.15);">
+              <span class="text-white text-xl">📉</span>
+            </div>
+            <div>
+              <p class="text-2xl font-bold text-white">{hero.stat_badge.value}</p>
+              <p class="text-xs text-white opacity-80">{hero.stat_badge.label}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
